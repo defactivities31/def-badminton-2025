@@ -1,0 +1,346 @@
+/* results.css - for completed match results page */
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom, #f7f9f8 0%, #e8f5e9 100%);
+  color: #222;
+}
+
+main {
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.page-title {
+  font-size: 24px;
+  text-align: center;
+  color: #154734;
+  margin-bottom: 25px;
+}
+
+.match-list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.match-card {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 12px;
+  padding: 18px 22px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.match-card-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.match-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 6px;
+}
+
+.round-pill {
+  background: #d0ede0;
+  color: #154734;
+  padding: 6px 14px;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.1);
+}
+
+.match-type-tag {
+  font-size: 13px;
+  font-weight: bold;
+  padding: 6px 16px;
+  border-radius: 999px;
+  text-transform: uppercase;
+  display: inline-block;
+  letter-spacing: 0.5px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Match type colors */
+.match-type-men-singles    { background: #154734; color: #fff; }
+.match-type-women-singles  { background: #c2185b; color: #fff; }
+.match-type-men-doubles    { background: #1976d2; color: #fff; }
+.match-type-women-doubles  { background: #8e24aa; color: #fff; }
+.match-type-unknown        { background: #aaa; color: white; }
+
+.match-set-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  font-weight: bold;
+  margin-top: 10px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #ccc;
+}
+
+.sets {
+  display: flex;
+  gap: 12px;
+}
+
+.set-title {
+  width: 40px;
+  text-align: center;
+}
+
+.set-score {
+  width: 40px;
+  text-align: center;
+  font-weight: bold;
+  color: #333;
+}
+
+.score-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 0;
+  border-bottom: 1px dashed #ccc;
+}
+
+.score-row:last-child {
+  border-bottom: none;
+}
+
+.player-name {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 500;
+}
+
+.player-photo {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ccc;
+}
+
+/* Winner highlight */
+.winner {
+  background-color: #e0f7e9;
+  border-left: 4px solid #43a047;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 15px 10px;
+  background: #f0f0f0;
+  font-size: 13px;
+  color: #666;
+  margin-top: 40px;
+}
+
+.results-filter {
+  margin: 10px 0;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  margin: 6px;
+  padding: 8px 14px;
+  background-color: #206546;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.filter-btn:hover {
+  background-color: #184d35;
+}
+
+.filter-btn.active {
+  background-color: white;
+  color: #206546;
+  border: 2px solid #206546;
+}
+
+
+.set-score.win {
+  background-color: #d0f5db;
+  border-radius: 4px;
+}
+
+.round-header {
+  font-weight: bold;
+  font-size: 18px;
+  margin: 20px 10px 10px;
+  color: #154734;
+  border-left: 4px solid #154734;
+  padding-left: 10px;
+}
+
+/* ========== Header ========== */
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 16px;
+  background: linear-gradient(135deg, #06251b, #0e3a2e);
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.main-header.sticky {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.logo-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 48px; /* or another suitable size */
+}
+
+.logo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0;
+}
+
+.nav-links {
+  display: flex;
+  gap: 18px;
+}
+
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 14px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+.nav-links a:hover,
+.nav-links a:focus {
+  background-color: #1a4738;
+  color: #ffeb3b;
+}
+
+.nav-links a:focus {
+  outline: 2px solid #ffeb3b;
+  outline-offset: 4px;
+}
+
+
+
+/* ========== Mobile Toggle ========== */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  background: rgba(255, 255, 255, 0.9);
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 2000;
+}
+
+.menu-toggle .bar {
+  width: 28px;
+  height: 4px;
+  background-color: #ffffff !important;
+  transition: all 0.3s ease;
+  border-radius: 2px;
+}
+
+/* Enhance menu button hover state */
+.menu-toggle:hover {
+  background-color: #ffffff;
+}
+
+/* Transform into "X" when nav is shown */
+.menu-toggle.open .bar:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-toggle.open .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle.open .bar:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* ========== Responsive ========== */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #1a4738;
+    position: absolute;
+    top: 60px;
+    padding: 10px 20px;
+    width: 100vw;
+    left: 0;
+    right: 0;
+    transition: max-height 0.3s ease-in-out, transform 0.3s ease, opacity 0.3s ease;
+    overflow: hidden;
+    max-height: 0;
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+
+  .nav-links.show {
+    display: flex;
+    max-height: 300px;
+    z-index: 1000;
+    transform: translateY(0);
+    opacity: 1;
+    background-color: #003d33; /* Unique darker teal */
+  }
+
+  .nav-links.show a {
+    padding: 10px 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .nav-links.show a:last-child {
+    border-bottom: none;
+  }
+
+  .logo-title {
+    height: 40px;
+  }
+
+  .logo {
+    height: 40px;
+  }
+}
+
+  .nav-links.show a:hover {
+    background-color: #00695c; /* Teal shade for hover */
+    color: #ffffff;
+  }
