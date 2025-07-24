@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Live Matches - DEF Badminton</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/live.css" />
+  
+</head>
+<body>
+  <header class="main-header">
+  <div class="logo-title">
+    <img src="/DEf 4K.jpg" alt="DEF Logo" class="logo">
+  </div>
+  <button id="menu-toggle" class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">☰</button>
+  <nav class="nav-links" id="nav-links" role="navigation" aria-label="Main Navigation">
+    <a href="live.html">Live Matches</a>
+    <a href="schedule.html">Upcoming</a>
+    <a href="results.html" class="active" aria-current="page"> Match Results</a>
+    <a href="points.html">Points Table </a> 
+    <a href="players.html">Players</a>
+  </nav>
+</header>
+  <!-- ✅ Live Matches Section -->
+  <main class="live-container match-layout">
+    <h1 class="schedule-title">🎥 Live Matches</h1>
+    <p class="schedule-subtitle">View scores as they update in real-time</p>
+
+    <div id="live-matches" class="match-list-container">
+      <!-- ✅ Each match will appear below in scoreboard format -->
+      <!-- ✅ Updated Sample Match Layout -->
+      <div class="match-card">
+        <div class="match-row-header">
+          <div class="round-pill">🏸 ROUND OF 64</div>
+        </div>
+        <div class="match-type match-type-men-doubles">MEN DOUBLES</div>
+        
+        <div class="match-set-header">
+          <div class="player-name">👤</div>
+          <div class="set-titles">
+            <div class="set-title">Set 1</div>
+            <div class="set-title">Set 2</div>
+            <div class="set-title">Set 3</div>
+          </div>
+        </div>
+
+        <div class="score-row">
+          <div class="player-name">👤 Kiran / Surya</div>
+          <div class="sets">
+            <div class="set-score">21</div>
+            <div class="set-score">18</div>
+            <div class="set-score">15</div>
+          </div>
+        </div>
+        <div class="score-row">
+          <div class="player-name">👤 Aditya / Ramu</div>
+          <div class="sets">
+            <div class="set-score">19</div>
+            <div class="set-score">21</div>
+            <div class="set-score">12</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">© 2025 Deaf Enabled Foundation</footer>
+  <script type="module" src="js/live.js"></script>
+</body>
+</html>
